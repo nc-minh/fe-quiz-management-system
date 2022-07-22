@@ -1,0 +1,31 @@
+.create-new__exam__item {
+  margin: 1rem 0;
+}
+
+.create-new__exam__content__wrapper {
+  display: flex;
+  align-items: center;
+
+  .create-new__exam__content__item {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .create-new__exam__content__wrapper {
+    flex-direction: column;
+    margin-left: 2rem;
+
+    .create-new__exam__content__item {
+      margin-top: 2rem;
+    }
+
+    .create-new__exam__content__item:last-child {
+      padding-top: 2rem;
+
+      button {
+        padding: 0 6rem;
+      }
+    }
+  }
+}

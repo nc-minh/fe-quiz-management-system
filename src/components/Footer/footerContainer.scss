@@ -1,0 +1,172 @@
+.footer-page {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #333c58;
+    display: flex;
+    justify-content: center;
+
+    .footer-page-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .footer-container-box {
+            .footer-box-logo {
+                align-items: center;
+
+                .footer-logo-image {
+                    background: url(../../images/logo/telio-icon.png) center / cover no-repeat;
+                    height: 65px;
+                    width: 170px;
+                }
+            }
+
+            .footer-box-social {
+                align-items: center;
+                padding: 20px 0;
+
+                .footer-social-icon {
+                    color: #fff;
+                    margin-right: 5px;
+                }
+            }
+
+            .footer-box-contact {
+                .footer-contact-title {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #b7bec4;
+                    margin-bottom: 20px;
+                }
+
+                .footer-contact-option {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #b7bec4;
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .footer-contact-icon {
+                        margin-right: 10px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #42a7cf;
+                        margin-left: 5px;
+
+                        &:hover {
+                            color: #205081;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-container-link {
+            .footer-link-address {
+                p {
+                    font-size: 14px;
+                    color: #b7bec4;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .footer-container-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+
+            .footer-bottom-content {
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #b7bec4;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-container-box {
+        width: 25%;
+
+        .footer-box-logo,
+        .footer-box-social {
+            display: flex;
+        }
+    }
+
+    .footer-container-link {
+        width: 50%;
+    }
+
+    .footer-page-container {
+        width: 70%;
+    }
+
+    .footer-link-address {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .footer-container-box {
+        width: 25%;
+
+        .footer-box-logo,
+        .footer-box-social {
+            display: flex;
+        }
+    }
+
+    .footer-container-link {
+        width: 50%;
+    }
+
+    .footer-page-container {
+        width: 95%;
+    }
+
+    .footer-link-address {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-container-box {
+        .footer-box-logo,
+        .footer-box-social {
+            display: none;
+        }
+
+        .footer-box-contact {
+            padding: 20px 10px;
+        }
+    }
+
+    .footer-container-link {
+        width: 100%;
+    }
+
+    .footer-page-container {
+        width: 98%;
+    }
+
+    .footer-link-address {
+        padding: 0 10px;
+    }
+}

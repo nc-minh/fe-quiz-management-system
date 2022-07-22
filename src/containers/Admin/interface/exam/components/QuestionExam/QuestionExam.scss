@@ -1,0 +1,25 @@
+h4 {
+  margin-top: -30px;
+  margin-left: 5px;
+}
+
+.answers{
+  &__item{
+    margin: .5rem 0;
+    padding: 1rem;
+  }
+
+  &__incorrect{
+    color: red;
+    font-weight: 600;
+  }
+
+  &__correct{
+    color: green;
+    font-weight: 600;
+  }
+}
+
+.not_answers{
+  background-color: rgba(241, 241, 10, .5);
+}

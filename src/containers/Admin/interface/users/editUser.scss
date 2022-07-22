@@ -1,0 +1,12 @@
+.edit-user{
+
+    &__item{
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+
+        &__lable{
+            width: 10rem;
+        }
+    }
+}

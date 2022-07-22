@@ -1,0 +1,64 @@
+.header-page {
+    width: 100%;
+    background-color: #333c58;
+    display: flex;
+    justify-content: center;
+
+    .header-page-container {
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+
+        .header-menu {
+            display: flex;
+            align-items: center;
+
+            .header-logo-image {
+                line-height: 62px;
+                background: url(../../images/logo/telio-icon.png) center / cover no-repeat;
+                height: 30px;
+                width: 80px;
+            }
+
+            .header-menu-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 30px;
+
+                .header-menu-link {
+                    line-height: 62px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 0 12px;
+
+                    &:hover {
+                        background-color: #ccc;
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        .header-language {
+            display: flex;
+            align-items: center;
+
+            .header-language-link {
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+                padding: 0 12px;
+                line-height: 62px;
+
+                &:hover {
+                    background-color: #ccc;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

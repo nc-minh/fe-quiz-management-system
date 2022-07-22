@@ -1,0 +1,157 @@
+.listExam-page {
+    display: flex;
+    justify-content: center;
+    background-color: #edf1f5;
+    min-height: 100vh;
+
+    .listExam-page-container {
+        background-color: #fff;
+        margin: 5rem 0;
+
+        .listExam-page-menu {
+            display: flex;
+            justify-content: flex-end;
+            margin: 15px 15px 0 0;
+
+            .listExam-menu-btn {
+                background-color: #01b075;
+                color: #fff;
+                border-radius: 3px;
+                padding: 6px 20px;
+
+                .listExam-menu-btn-text {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    padding: 0 10px;
+                }
+
+                &:hover {
+                    background-color: #2fbe8e;
+                    color: #fff;
+                }
+            }
+        }
+
+        .listExam__item {
+            width: 100%;
+            list-style-type: none;
+
+            .listExam__item__name {
+                padding: 1rem;
+                color: #333;
+                font-weight: 500;
+            }
+
+            .listExam__item__wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .listExam__item__answer {
+                font-size: 1.6rem;
+                margin: 0 2rem;
+                padding: 0 2rem;
+                position: relative;
+            }
+
+            .listExam__item__answer::before {
+                content: "";
+                display: block;
+                background-color: black;
+                width: 0.7rem;
+                height: 0.7rem;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+            }
+
+            .listExam__item__footer {
+                font-weight: 700;
+                font-style: italic;
+                margin: 2rem 0 0 2rem;
+                color: #ff0000;
+                display: flex;
+                justify-content: space-between;
+
+                .listExam-btn {
+                    font-size: 1.6rem;
+                    padding: 0.5rem 2rem;
+                    font-weight: 500;
+                    background-color: #fff;
+                    color: #000;
+                    box-shadow: rgb(0 0 0 / 24%) 0 2px 2px 0, rgb(0 0 0 / 24%) 0 0 1px 0;
+                    height: auto !important;
+                    border: none;
+                }
+
+                .listExam-btn-start {
+                    background-color: #01b075;
+                    color: #fff;
+                }
+
+                .listExam-btn-complete {
+                    background-color: #d65939;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .listExam-page-container {
+        width: 80%;
+
+        .listExam__item {
+            padding: 3rem 3rem 2rem 3rem;
+
+            .listExam__item__name {
+                font-size: 2rem;
+            }
+
+            .listExam__item__message {
+                margin-right: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+    .listExam-page-container {
+        width: 90%;
+
+        .listExam__item {
+            padding: 3rem 3rem 2rem 3rem;
+
+            .listExam__item__name {
+                font-size: 2rem;
+            }
+            margin: 0 2rem;
+
+            .listExam__item__message {
+                margin-right: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .listExam-page-container {
+        width: 96%;
+
+        .listExam__item {
+            padding: 1rem 1rem 2rem 1rem;
+
+            .listExam__item__name {
+                font-size: 1.6rem;
+            }
+
+            .listExam__item__message {
+                margin-right: 1rem;
+            }
+        }
+    }
+}

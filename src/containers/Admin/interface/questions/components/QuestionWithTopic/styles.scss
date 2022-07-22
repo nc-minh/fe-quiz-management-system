@@ -1,0 +1,128 @@
+$bg-color: rgba(67, 173, 214, 0.5);
+
+.questions__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+
+    .questions__header__menu {
+        display: flex;
+        align-items: center;
+
+        .questions__header__item {
+            cursor: pointer;
+            margin-right: 1.5rem;
+        }
+
+        .questions__header__item:hover {
+            color: #ff0000;
+        }
+
+        .question--add {
+            text-align: center;
+        }
+    }
+}
+
+.questions__title {
+    text-align: center;
+    margin-bottom: 0;
+
+    .questions__title__name {
+        color: #ff0000;
+        margin-left: 0.5rem;
+    }
+}
+
+.questions__item {
+    width: 100%;
+    list-style-type: none;
+
+    .questions__item__name {
+        padding: 1rem;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .questions__item__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .questions__item__answer {
+        font-size: 1.6rem;
+        margin: 0 2rem;
+        list-style: square;
+    }
+
+    .questions__item__footer {
+        font-weight: 700;
+        font-style: italic;
+        color: #ff0000;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    .question--add {
+        margin-right: 3rem;
+    }
+
+    .questions__title {
+        padding: 2rem;
+    }
+
+    .questions__item__name {
+        font-size: 2rem;
+    }
+
+    .questions__item {
+        padding: 2rem;
+    }
+
+    .questions__item__footer {
+        
+        margin: 2rem 0 0 2rem;
+        
+        .questions__item__result {
+            margin-right: 3rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .question--add {
+        margin-right: 1.5rem;
+    }
+
+    .questions__title {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+
+    .questions__item__name {
+        font-size: 1.6rem;
+    }
+
+    .questions__item {
+        padding: 1rem;
+    }
+
+    .questions__item__wrapper {
+        padding: 0;
+    }
+
+    .questions__item__footer {
+        
+        margin: 2rem 0 0 0;
+        
+        .questions__item__result {
+            margin-right: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.none{
+    display: none;
+}
+
+.question__container__result {
+    color: red;
+    display: flex;
+
+    strong{
+        margin-left: .5rem;
+    }
+}
+
+.question__wrapper__item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    background-color: #ddd;
+    border-radius: 1rem;
+
+    &:hover{
+        background-color: #ccc;
+    }
+
+    .question__wrapper__icon{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .question__wrapper__icon:hover{
+        color: red;
+    }
+}
+

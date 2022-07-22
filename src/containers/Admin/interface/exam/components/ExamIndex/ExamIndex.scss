@@ -1,0 +1,19 @@
+.exam {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  .exam-table {
+    text-align: left;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 2px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .exam-table {
+    overflow-x: auto;
+  }
+}

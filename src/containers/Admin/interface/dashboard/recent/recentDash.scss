@@ -1,0 +1,26 @@
+.recentDash {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .recentDash-container {
+        width: 100%;
+        padding: 20px;
+        background-color: #fff;
+
+        .recentDash-container-title {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 3rem;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .recentDash-container {
+        overflow-x: auto;
+    }
+}

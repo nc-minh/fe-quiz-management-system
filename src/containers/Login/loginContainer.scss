@@ -1,0 +1,88 @@
+.login-page {
+    position: relative;
+
+    .login-background {
+        background: url("../../images/bgr/bgr_login.jpg") center / cover no-repeat;
+        opacity: 0.5;
+    }
+
+    .login-container {
+        padding: 36px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 0;
+        position: absolute;
+
+        .login-container-box {
+            padding: 12px 24px;
+            text-align: center;
+            align-self: center;
+
+            .login-box-logo {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .login-logo-image {
+                    background: url(../../images/logo/telio.jpg) center / cover no-repeat;
+                    width: 200px;
+                    height: 120px;
+                }
+            }
+
+            .login-box-title {
+                font-size: 2.6rem;
+                font-weight: 500;
+                padding: 16px 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .login-background {
+        height: 800px;
+    }
+
+    .login-container {
+        width: 600px;
+        top: 25%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .login-background {
+        height: 600px;
+    }
+
+    .login-container {
+        width: 600px;
+        top: 15%;
+        left: 15%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 767px) {
+    .login-background {
+        height: 600px;
+    }
+
+    .login-container {
+        width: 360px;
+        top: 10%;
+        left: 4%;
+    }
+}
+
+@media (max-width: 376px) {
+    .login-background {
+        height: 550px;
+    }
+
+    .login-container {
+        width: 295px;
+        top: 6%;
+        left: 1%;
+    }
+}
